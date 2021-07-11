@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>You are</title>
+  </head>
+  <body>
+    <header>
+      <a href="/"><h1>You are</h1></a>
+    </header>
+    <main>
+      <section>
+        <article>
+          <h2>Predict the nationality of a name</h2>
+          <h3>An API for predicting nationality from a name</h3>
+          <p>
+            The API is free for up to 1000 names/day. No sign up or API key
+            needed. So go ahead and try it out. If you need more requests, you
+            can sign up for an API key at store.
+            <a href="https://nationalize.io/" target="_blank">nationalize.io</a>
+          </p>
+        </article>
+        <article>
+          <h2>Form</h2>
+          <form action="">
+            <label for="name"><span>What is your name?</span></label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              autocomplete="name"
+              required
+            />
+            <br />
+            <label for="country"><span>what is your country?</span></label>
+            <input
+              type="text"
+              name="country"
+              id="country"
+              placeholder="Country"
+              autocomplete="country"
+              required
+            />
+            <br />
+            <label for="age"><span>how old are you?</span></label>
+            <input
+              type="number"
+              name="age"
+              id="age"
+              placeholder="Age"
+              required
+            />
+            <br />
+            <span>what is your gender?</span>
+            <input
+              type="radio"
+              id="genderM"
+              name="gender"
+              value="male"
+              required
+            />
+            <label for="genderM"><b>Male</b></label>
+
+            <input
+              type="radio"
+              id="genderF"
+              name="gender"
+              value="female"
+              required
+            />
+            <label for="genderF"><b>Female</b></label>
+            <br />
+            <input type="submit" />
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Robinson Arley Rojas Novoa. ❤ <br />
+        2021.
+      </p>
+    </footer>
+  </body>
+</html>
