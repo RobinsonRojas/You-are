@@ -1,34 +1,75 @@
-body {
-  background-color: rgb(30, 30, 30);
-  color: aliceblue;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+* {
+  box-sizing: border-box;
+  padding: 0px;
   margin: 0px;
 }
 
+html {
+  background-color: rgb(24, 25, 26);
+  font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+  color: rgb(228, 230, 235);
+  margin: 0px;
+}
+
+a {
+  color: rgb(69, 153, 255);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 header {
-  background-color: rgb(60, 60, 60);
-  border: solid 1px white;
+  background-color: rgb(36, 37, 38);
+  border-bottom: 1px solid rgb(58, 59, 60);
+  box-shadow: 0 2px 7px 0 rgb(0 0 0 / 20%);
   text-align: center;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
 }
 
-main {
-  border: solid 1px white;
-  margin: 10px 0px;
+.main-nav {
+  padding: 20px;
+}
+
+.main-nav__item {
+  display: inline-block;
+}
+
+.main-nav__item a {
+  border: 1px solid rgb(58, 59, 60);
+  border-radius: 8px;
+  padding: 8px;
+  margin: 8px;
+  text-decoration: none;
+}
+
+.main-nav__item a:hover {
+  border: 1px solid;
+  border-radius: 8px;
 }
 
 article {
-  background-color: rgb(43, 43, 43);
-  border: solid 1px white;
-  border-radius: 15px;
-  margin: 2% 10%;
-  padding: 0% 2%;
+  background-color: rgb(36, 37, 38);
+  box-shadow: 0 0 7px 2px rgb(0 0 0 / 20%);
+  border-radius: 8px;
+  margin: 2% 25%;
+  padding: 1em;
+}
+
+article p {
+  padding-top: 0.5em;
 }
 
 footer {
-  background-color: rgb(60, 60, 60);
-  border: solid 1px white;
+  background-color: rgb(36, 37, 38);
+  border-top: 1px solid rgb(58, 59, 60);
+  box-shadow: 0 -2px 7px 0px rgb(0 0 0 / 20%);
   text-align: center;
+}
+
+footer p {
+  padding: 1em;
 }
