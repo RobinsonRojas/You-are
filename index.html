@@ -9,13 +9,13 @@
   </head>
   <body>
     <header>
+      <h1>You are</h1>
       <nav>
-        <h1>You are</h1>
         <ul class="main-nav">
-          <li class="main-nav__item"><a href="#">Home</a></li>
-          <li class="main-nav__item"><a href="#">pepe</a></li>
-          <li class="main-nav__item"><a href="#">pepe2</a></li>
-          <li class="main-nav__item"><a href="#">pepe3</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">pepe</a></li>
+          <li><a href="#">pepe2</a></li>
+          <li><a href="#">pepe3</a></li>
         </ul>
       </nav>
     </header>
@@ -33,17 +33,17 @@
         </article>
         <article>
           <h2>Form</h2>
-          <form action="">
-            <label for="name"><span>What is your name?</span></label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Name"
-              autocomplete="name"
-              required
-            />
 
+          <!-- <form> -->
+          <label for="name"><span>What is your name?</span></label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            autocomplete="name"
+          />
+          <!-- 
             <label for="country"><span>what is your country?</span></label>
             <input
               type="text"
@@ -80,19 +80,15 @@
               value="female"
               required
             />
-            <label for="genderF"><b>Female</b></label>
-            <input type="submit" />
-          </form>
+            <label for="genderF"><b>Female</b></label> -->
+          <!-- <input type="submit" /> -->
+          <button type="button" onclick="country().then(show);">enviar</button>
+          <!-- </form> -->
         </article>
 
         <article>
           <h2>You are :</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            labore aut quae repudiandae quasi nulla, ullam neque fugiat a, sit
-            laborum, perspiciatis officia magnam facilis sequi vitae ipsa rerum
-            at!
-          </p>
+          <p id="p"></p>
         </article>
       </section>
     </main>
@@ -103,5 +99,6 @@
         2021.
       </p>
     </footer>
+    <script src="js.js"></script>
   </body>
 </html>

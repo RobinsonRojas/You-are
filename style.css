@@ -22,33 +22,41 @@ a:hover {
 
 header {
   background-color: rgb(36, 37, 38);
-  border-bottom: 1px solid rgb(58, 59, 60);
+  border-bottom: 1px solid rgba(255, 255, 255, 20%);
   box-shadow: 0 2px 7px 0 rgb(0 0 0 / 20%);
-  text-align: center;
-  position: -webkit-sticky;
+  box-shadow: 0 -1px 8px #000;
+  /* position: -webkit-sticky; */
   position: sticky;
   top: 0px;
 }
 
+header h1 {
+  position: absolute;
+  left: 6%;
+  margin: 6px 0px;
+}
+
 .main-nav {
+  text-align: center;
   padding: 20px;
 }
 
-.main-nav__item {
+.main-nav li {
   display: inline-block;
 }
 
-.main-nav__item a {
-  border: 1px solid rgb(58, 59, 60);
+.main-nav a {
+  border: 1px solid rgb(255, 255, 255, 20%);
   border-radius: 8px;
   padding: 8px;
   margin: 8px;
   text-decoration: none;
 }
 
-.main-nav__item a:hover {
+.main-nav a:hover {
   border: 1px solid;
   border-radius: 8px;
+  box-shadow: 0 0 7px 2px rgb(0 0 0 / 20%);
 }
 
 article {
@@ -65,7 +73,7 @@ article p {
 
 footer {
   background-color: rgb(36, 37, 38);
-  border-top: 1px solid rgb(58, 59, 60);
+  border-top: 1px solid rgba(255, 255, 255, 20%);
   box-shadow: 0 -2px 7px 0px rgb(0 0 0 / 20%);
   text-align: center;
 }
